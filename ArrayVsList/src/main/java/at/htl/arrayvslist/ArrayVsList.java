@@ -43,4 +43,23 @@ public class ArrayVsList {
         myList.add("es");
         myList.add("schön");
     }
+
+    private void showContents(){
+        System.out.println("Show array content: ");
+        for (String tmp : myArray) {
+            System.out.println(tmp);
+        }
+
+        System.out.println("Show list content: ");
+        for (String tmp : myList) {
+            System.out.println(tmp);
+        }
+    }
+
+    public static void main(String[] args) {
+        ArrayVsList arrayVsList = new ArrayVsList();
+        arrayVsList.fill();
+        arrayVsList.showContents();
+        
+    }
 }
