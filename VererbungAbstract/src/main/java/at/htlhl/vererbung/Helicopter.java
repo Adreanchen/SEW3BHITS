@@ -16,6 +16,7 @@ public class Helicopter extends Aircraft {
     }
 
     public void land() {
+        super.land();
         System.out.println("An Helicopter is landing.  ");
     }
 }

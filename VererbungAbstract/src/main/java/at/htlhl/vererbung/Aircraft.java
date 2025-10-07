@@ -5,6 +5,7 @@ public abstract class Aircraft {
     protected float altitude;
 
     public Aircraft() {
+        System.out.println("Constructor Aircraft");
         speed = 0.0f;
         altitude = 0.0f;
     }
