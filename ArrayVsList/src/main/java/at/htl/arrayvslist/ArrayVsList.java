@@ -1,4 +1,5 @@
 package at.htl.arrayvslist;
+import  java.util.ArrayList;
 
 /**
  * Dieses Beispiel zeigt die Unterschiede zwischen einem Array und einer
@@ -17,6 +18,29 @@ package at.htl.arrayvslist;
 
 public class ArrayVsList {
 
-    // Fields *************************************************************************************************************
-    
+    // Fields  ********************************************************************************************************
+
+    private String[] myArray;
+    private ArrayList<String> myList;
+
+    // Instance creation  *********************************************************************************************
+
+    public ArrayVsList(){
+        myArray = new String[4];
+        myList = new ArrayList<String>();
+    }
+
+    private void fill() {
+        // Fill array with values
+        myArray[0] = "Heute";
+        myArray[1] = "ist";
+        myArray[2] = "es";
+        myArray[3] = "schön";
+
+        // Fill list with values
+        myList.add("Heute");
+        myList.add("ist");
+        myList.add("es");
+        myList.add("schön");
+    }
 }
