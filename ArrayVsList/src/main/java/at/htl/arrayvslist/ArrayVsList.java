@@ -28,6 +28,8 @@ public class ArrayVsList {
     public ArrayVsList(){
         myArray = new String[4];
         myList = new ArrayList<String>();
+        fill();
+        showContents();
     }
 
     private void fill() {
@@ -57,9 +59,6 @@ public class ArrayVsList {
     }
 
     public static void main(String[] args) {
-        ArrayVsList arrayVsList = new ArrayVsList();
-        arrayVsList.fill();
-        arrayVsList.showContents();
-        
+        new ArrayVsList();
     }
 }
